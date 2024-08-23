@@ -1,0 +1,50 @@
+@use '../../styles.sass'as *
+
+@mixin card-style
+    width:25rem
+    height:12rem
+    padding: 0 18px 0 18px
+    border-radius: 10px
+    box-shadow: 0px 0px 10px 0px rgba(57, 255, 20, 0.25)
+    background-color: #18181b
+    
+    .card-text
+        color: $text-color
+
+h1
+    text-align: center
+    color: $text-color
+
+
+.card-container
+    padding-top: 40px
+    display: flex
+    gap: 20px
+    align-items: center
+    justify-content: center
+    flex-direction: row
+    flex-wrap: wrap
+    color: $text-color    
+
+    .card-skill
+        background-color: #18181b
+        color: white
+        border: 1px solid
+        border-radius: 25px
+        padding: 4px
+        font-size: 0.8rem
+        
+    .tag
+        padding: 10px 0 10px 0
+
+.card
+    @include card-style
+    a
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+        &:visited
+            color: $text-color2
+        &:link    
+            color: $text-color2
+

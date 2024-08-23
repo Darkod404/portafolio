@@ -1,0 +1,60 @@
+@use '../../styles.sass' as *
+
+.menu
+    display: flex
+    padding: 20px 80px 10px 80px
+    justify-content: space-between
+    border-bottom: 1px solid #001126
+    background-color: #000f1f
+
+.title-icon
+    width: 60px
+    height: 60px
+    background-color: #035e8c
+    border-radius: 200px
+    color: $text-color
+    text-align: center
+    font-size: 30px
+    font-weight: bold
+    padding: 12px 5px 5px 5px
+
+.name-container
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    padding-left: 10px
+    font-size: 20px
+    margin: 0 0 0 20px
+
+    .name
+        padding-left: 15px
+        color: $text-color
+
+    .name-text
+        font-size: 20px
+        font-weight: bold
+        padding-bottom: 7px
+
+.subtitle
+    color: $text-color
+    font-size: 15px
+
+.button-section
+    display: flex
+    flex-direction: row
+    padding-left: 10px
+    font-size: 20px
+    border: none
+    align-items: center
+    margin: 0 20px 0 0
+    
+    .button
+        padding-left: 20px
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+        &:visited
+            color: $text-color
+        &:link    
+            color: $text-color
